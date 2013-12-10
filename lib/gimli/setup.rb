@@ -24,6 +24,10 @@ module Gimli extend OptiFlagSet
     description 'Parameters to be passed on to wkhtmltopdf. Use "" if more than one parameter. See wkhtmltopdf usage for possible parameters.'
     alternate_forms 'w'
   end
+  optional_flag 'outputhtml' do
+    description 'Sets the name of the output html file.'
+    alternate_forms 'O'
+  end
   optional_switch_flag 'recursive' do
     description 'Recurse current or target directory and convert all valid markup files'
     alternate_forms 'r'

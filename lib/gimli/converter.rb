@@ -38,6 +38,8 @@ module Gimli
         html = merged_contents.join
         output_pdf(html, nil)
       end
+
+      File.open(@config.output_html, "w").puts html if @config.output_html
     end
 
     # Rewrite relative image urls to absolute
